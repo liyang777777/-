@@ -13,22 +13,30 @@
         </div>
       </div>
     </div>
+    <nav1></nav1>
   </div>
 </template>
 <script>
-import Nav from '../Nav/nav1'
+
+import nav1 from '../Nav/nav1'
 export default {
   name: "",
   props: {},
-  components: {},
-  data() {
-    return {};
+  components: {
+    nav1
   },
-  methods: {},
+  data() {
+    return {
+     
+  }
+  },
+  methods: {
+    
+  },
   mounted() {},
   watch: {},
   computed: {}
-};
+}
 </script>
 
 <style scoped lang='scss'>
@@ -46,19 +54,19 @@ export default {
 .box {
   width: 150px;
   height: 21px;
-  left: 192px;
+  left: 200px;
   top: 9px;
   margin-left: 10px;
   position: absolute;
-  font-size: 18px;
+  font-size: 21px;
 }
 .box2 {
   width: 122px;
-  height: 21px;
+  height: 35px;
   left: 725px;
   top: 0px;
   position: absolute;
-  font-size: 18px;
+  font-size: 19px;
   background-color: rgb(8,191,145);
 }
 .btn {
@@ -76,7 +84,7 @@ export default {
   margin-left: 960px;
   margin-top: -29px;
   position: absolute;
-  font-size: 18px;
+  font-size: 22px;
   background-color: rgb(8,191,145);
 }
 .btn2 {
@@ -85,7 +93,7 @@ export default {
   margin-left: 1030px;
   margin-top: -29px;
   position: absolute;
-  font-size: 18px;
+  font-size: 30px;
   background-color: rgb(8,191,145);
 }
 </style>
