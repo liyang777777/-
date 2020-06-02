@@ -1,6 +1,6 @@
 <template>
  <div>
-   <Nav></Nav>
+   <Nav>s</Nav>
  </div>
 </template>
 <script>
