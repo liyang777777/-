@@ -71,4 +71,7 @@ import unf2 from '../Unf/unf2'
   margin-left: 600px;
   margin-top: 40px;
 }
+.btn {
+  
+}
 </style>
