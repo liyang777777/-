@@ -43,7 +43,7 @@ export default {
 <style scoped lang='scss'>
 .All {
   width: 1400px;
-  height: 200px;
+  height: 50px;
   position: relative;
 }
 .img {

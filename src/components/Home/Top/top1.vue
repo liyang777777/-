@@ -1,8 +1,8 @@
 <template>
   <div>
-    <div class="box"></div>
-    <top2></top2>
-    <top3></top3>
+    <div class="box"><top2></top2>
+    <top3></top3></div>
+    
   </div>
 </template>
 
@@ -28,9 +28,10 @@ export default {
 
 <style scoped lang='scss'>
 .box {
-  width: 100%;
-  height: 500px;
+  width: 1400px;
+  height: 400px;
   position: relative;
   background: rgb(136, 191, 159);
+  display: flex;
 }
 </style>

@@ -1,13 +1,11 @@
 <template>
-  <div>
-    <div class="conter">
-      <div class="box">
-        <div class="Top" v-for="(item,index) in list" :key="index">
-          <div class="list">
-            <div class="list1">{{item.name}}</div>
-            <div class="list2">{{item.tags[0].name}}</div>
-            <div class="list3">{{item.tags[1].name}}</div>
-          </div>
+  <div class="conter">
+    <div class="box">
+      <div class="Top" v-for="(item,index) in list" :key="index">
+        <div class="list">
+          <div class="list1">{{item.name}}</div>
+          <div class="list2">{{item.tags[0].name}}</div>
+          <div class="list3">{{item.tags[1].name}}</div>
         </div>
       </div>
       <div class="btn">经管专区</div>
@@ -20,13 +18,11 @@ import axios from "axios";
 export default {
   name: "",
   props: {},
-  components: {
-    
-  },
+  components: {},
   data() {
     return {
       list: []
-    }
+    };
   },
   methods: {
     getData() {
@@ -34,7 +30,7 @@ export default {
         .get("http://120.78.14.107/api/v2/index/categories")
         .then(res => {
           this.list = res.data;
-          console.log(res.data)
+          console.log(res.data);
         })
         .catch(err => {
           console.log(err);
@@ -50,62 +46,46 @@ export default {
 </script>
 
 <style scoped lang='scss'>
-.Top {
-  width: 100%;
-  height: 500px;
+.box {
+  width: 260px;
+  height: 400px;
   position: absolute;
-  display: flex;
-  margin-left: 20px;
-  margin-top: 20px;
-  font-size: 10px;
-  background: rgb(136, 191, 159);
+  left: 120px;
+  background: blanchedalmond;
+}
+.Top {
+  width: 260px;
+  height: 50px;
+  border-bottom: 1px solid white;
 }
 .list {
-  width: 300px;
-  height: 200px;
-  position: absolute;
-  top: 10px;
-  left: 10px;
+  width: 260px;
+  height: 50px;
+  font-size: 14px;
   display: flex;
-  margin-left: 20px;
-  margin-top: 20px;
-  font-size: 10px;
-  background: rgb(136, 191, 159);
+  color: aliceblue;
+}
+.list:hour {
+  background: black;
+  color: aquamarine;
 }
 .list1 {
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  top: 10px;
-  left: 10px;
+  width: 260px;
+  height: 50px;
+  font-size: 14px;
   display: flex;
-  margin-left: 20px;
-  margin-top: 20px;
-  font-size: 10px;
-  background: rgb(136, 191, 159);
 }
 .list2 {
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  top: 10px;
-  left: 10px;
+  width: 260px;
+  height: 50px;
   display: flex;
-  margin-left: 20px;
-  margin-top: 20px;
-  font-size: 10px;
-  background: rgb(136, 191, 159);
+  font-size: 14px;
 }
 .list3 {
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  top: 10px;
-  left: 10px;
+  width: 260px;
+  height: 50px;
   display: flex;
-  margin-left: 20px;
-  margin-top: 20px;
-  font-size: 10px;
-  background: rgb(136, 191, 159);
+  font-size: 14px;
 }
+
 </style>
